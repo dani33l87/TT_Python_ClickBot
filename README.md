@@ -47,6 +47,20 @@ Numpy: http://numpy.scipy.org/
 PyWin: http://sourceforge.net/projects/pywin32/
 
 
+Script Structure
+================
+
+In order to make it easy for debugging is better to split the click bot script in different parts, like: script for 
+deleting the cookies, script to switch proxy, the actual click bot action (create different random situation, 
+changing the cover source).  
+
+In this why if something is not working you can go directly to problem script and fix it.
+For that the execution script will only lead to execute the other scripts in the order request.
+
+You can see a clear example in my code. Every script has an action and if something is going wrong I will go to that
+script and fix it without being annoying for the rest of code on testing.
+
+
 Short Tutorial
 ==============
   
